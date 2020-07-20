@@ -49,4 +49,7 @@
   font-size: 13px;
   font-weight: 700;
 }
+.header__cart__total {
+  margin-right: 10px;
+}
 

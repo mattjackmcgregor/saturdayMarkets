@@ -7,7 +7,7 @@ import {
 
 import './App.css'
 import Header from './components/header/Header';
-
+import Home from './components/home/Home'
 function App() {
   return (
     <Router>
@@ -25,7 +25,7 @@ function App() {
             <h1>orders</h1>
             </Route>
             <Route path='/'>
-            <h1>home</h1>
+            <Home />
             </Route>
           </Switch>
         </div>

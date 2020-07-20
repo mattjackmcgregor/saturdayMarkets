@@ -21,6 +21,9 @@ function App() {
             <Route path='/login'>
               <h1>login</h1>
             </Route>
+            <Route path='/orders'>
+            <h1>orders</h1>
+            </Route>
             <Route path='/'>
             <h1>home</h1>
             </Route>

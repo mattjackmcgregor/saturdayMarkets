@@ -1,0 +1,20 @@
+.checkout {
+  display: flex;
+  background-color: white;
+  height: max-content; 
+}
+.checkout__title {
+  background-color: white;
+  border-bottom: 1px solid lightgray;
+   margin-right: 20px;
+  /* margin-bottom: 20px; */ 
+}
+.checkout__left {
+  min-width: 60%;
+}
+.checkout__left:last-child {
+  border-bottom: none;
+}
+.checkout__right {
+  width: 40%
+}

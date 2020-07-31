@@ -7,7 +7,7 @@ import './Header.css'
 
 import {GlobalContext} from '../../context/GlobalState'
 
-function Header() {
+const Header = () => {
 
   const {basket} = useContext(GlobalContext)
 

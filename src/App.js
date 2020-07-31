@@ -8,11 +8,12 @@ import {
 import './App.css'
 import Header from './components/header/Header';
 import Home from './components/home/Home'
+import {Checkout} from './components/Checkout/Checkout'
 
 //globalState/context provider
 import {GlobalProvider} from './context/GlobalState'
 
-function App() {
+const App = () => {
   return (
     <GlobalProvider>
       <Router>
@@ -21,7 +22,7 @@ function App() {
           <div className='App-content'>
             <Switch>
               <Route path='/checkout'>
-                <h1>checkout</h1>
+                <Checkout />
               </Route>
               <Route path='/login'>
                 <h1>login</h1>

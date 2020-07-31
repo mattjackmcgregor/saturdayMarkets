@@ -14,7 +14,8 @@ export const Product = ({id, title, price, image}) => {
     const item = {
       id,
       title,
-      price
+      price,
+      image
     }
     console.log(item)
     addItem(item)

@@ -1,0 +1,27 @@
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: white;
+  margin: 10px;
+  padding: 20px;
+  z-index: 1;
+  width: 100%;
+  min-width: 100px;
+}
+.product > img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: contain;
+}
+
+.product__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+.product__price {
+  margin: 5px 0;
+}

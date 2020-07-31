@@ -1,11 +1,16 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import { Link } from 'react-router-dom'
 import SearchIcon from '@material-ui/icons/Search'
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart'
 
 import './Header.css'
 
+import {GlobalContext} from '../../context/GlobalState'
+
 function Header() {
+
+  const {basket} = useContext(GlobalContext)
+
   return (
     <nav className='header'>
       <Link to='/'>
@@ -35,7 +40,7 @@ function Header() {
         <Link to='checkout' className='header__link'>
           <ShoppingCartIcon className='header__cart__icon' />
           <span className='header__option__lowerText header__cart__total'>
-            2
+            {basket.length}
           </span>
         </Link>
       </div>
